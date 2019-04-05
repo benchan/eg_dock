@@ -1,5 +1,5 @@
 # 作成するコンテナの基となるイメージを指定
-FROM centos:centos6.10
+FROM centos:centos6.9
 
 # ARG Dockerfile内で使用できる変数
 # docker buildの際にのみ利用を想定される値に使用
