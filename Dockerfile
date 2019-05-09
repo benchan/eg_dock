@@ -26,7 +26,7 @@ RUN sed -ri "s/Etc\/UTC/Asia\/Tokyo/" /etc/sysconfig/clock
 # PHP5.6 インストール
 # PHPモジュールを追加する時はここに追記する
 # 追記せずに直接コンテナに入りインストールしても再buildした時に消えてしまうので注意
-RUN yum install -y --enablerepo=remi,remi-php56 php php-devel php-pear php-mysql php-mbstring php-pdo php-pecl-apc
+RUN yum install -y --enablerepo=remi,remi-php56 php php-devel php-pear php-mysql php-mbstring php-pdo php-pecl-apc php-gd
 
 # php.iniの設定書き換え
 RUN sed -ri 's/;date.timezone =/date.timezone = Asia\/Tokyo/g' /etc/php.ini
