@@ -19,6 +19,9 @@ http://docs.docker.jp/compose/install.html
 ```
 $ git clone https://github.com/nagisa-ito/eg-dock.git
 $ cd eg-dock
+```
+.envファイルを自分の環境に合わせて書き直す
+```
 $ docker-compose build
 $ docker-compose up -d
 ```
